@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+ --bg-image:url('bg.jpg') ;
+ --first-color: rgb(248, 132, 213);
+ --second-color: rgb(243, 98, 195);
+ --text-color:#0e0d0d;
+ --main-color:#fcfcfc;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-image);
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+    color: var(--text-color) ;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    max-width:  6%;
+    max-height: auto;
+    left: 20;
+    color: var(--main-color);
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.9rem; 
+    color: var(--main-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover 
+.navbar a.active{
+    color: var(--text-color);
+}
+
+#menu-icon{
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+}
+
+/*contact content*/
+.heading {
+    color: rgb(14, 12, 13);
+      text-shadow: 2px 2px 2px rgb(10, 10, 10);
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 2.9em;
+      line-height: 1.3em;
+      font-weight: bold;
+      margin-top: 8%;
+  }
+  
+  .columnform h2{
+    font-size: 2.3rem;
+  }
+
+  input[type=text], input[type-email], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  label[for=name], label[for=email], label[for=message] {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-top: 4rem;
+  }
+
+  button[type=submit] {
+    font-size: 1.9rem;
+  }
+  
+  .Submitbtn{
+    width: 100%;
+    background-color:rgb(238, 135, 229);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Submitbtn:hover{
+    background-color:rgb(224, 85, 190);
+  }
+  
+  .columnmap {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 500px;
+    background-color:transparent;
+  }
+  
+  .columnform{
+  float:left;
+  width:60%;
+  padding:10px;
+  height:500px;
+  background-color:transparent;
+  color:rgb(247, 247, 247);
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .mapouter{
+  position:relative;
+  text-align:right;
+  height:300px;
+  width:100%;}
+  
+  .gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:100%;
+  border-radius: 10px;
+  }
+
+  /*footer content*/
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -100;
+  width: 100%;
+}
+
+/* Optional: Add some styling to the text */
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
