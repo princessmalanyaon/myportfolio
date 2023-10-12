@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+ --bg-image:url('bg.jpg') ;
+ --first-color: rgb(248, 132, 213);
+ --second-color: rgb(243, 98, 195);
+ --text-color:#0e0d0d;
+ --main-color:#fcfcfc;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-image);
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+    color: var(--text-color) ;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    max-width:  6%;
+    max-height: auto;
+    left: 20;
+    color: var(--main-color);
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.9rem; 
+    color: var(--main-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover 
+.navbar a.active{
+    color: var(--text-color);
+}
+
+#menu-icon{
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+}
+
+/*about content*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    min-height: auto;
+    background: transparent;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  
+  .heading {
+    color: black;
+      text-shadow: 2px 2px 2px rgb(10, 10, 10);
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 2.9em;
+      line-height: 1.3em;
+      font-weight: bold;
+      margin-top: 0%;
+  }
+
+  .about .about-heading {
+    max-width: 1330px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    }
+
+  .about-heading .heading-info {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 50%;
+    height: 81%;
+    margin-left: -10rem;
+    justify-content: space-between;
+  }
+ 
+  .about-heading .heading-info h1{
+    font-size: 6.0rem;
+    color: var(--main-color);
+  }
+  .about-heading .heading-info p{
+    font-size: 2.6rem;
+    text-align: justify;
+  }
+
+  .about-heading .heading-info h2{
+    font-size: 2.1rem;
+    margin-bottom: 1.0rem;
+  }
+  .about-heading .heading-info h3{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-top: 2.0rem;
+    text-align: center;
+  }
+
+ .about-heading .heading-info ul.a {
+    list-style-type: square;
+    color: var(--main-color);
+  }
+  
+  .about-heading .heading-info ul.a li {
+    font-size: 2.1rem;
+    color: var(--text-color);
+  }
+  .about-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img img {
+    position: relative;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about .about-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  
+  .about-row .about-column {
+    flex: 1 1 40rem;
+  }
+  
+  .about-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+  }
+  
+  .about-column  .about-box {
+    border-left: .2rem solid var(--main-color);
+  }
+  .about-box  .about-content{
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .about-box .about-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.0rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: #fcfcfc;
+    border-radius: 50%;
+  }
+  .about-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--text-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .about-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+  }
+  .about-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+  }
+  .about-content .content .year i{
+    padding-right: .5rem;
+  }
+  .about-content .content h3{
+    font-size: 2rem;
+  }
+  .about-content .content p{
+    font-size: 1.6rem;
+  }
+
+  .about-content .content h1{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-content .content h1 span {
+    color: var(--main-color);
+  }
+  .about-content .content .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--second-color);
+    padding: .5rem;
+    margin: 1rem 0;
+  }
+  .about-content .content .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: #ccc;
+  }
+  
+  .about-column .about-content:nth-child(1) .content:nth-child(1) .bar span{
+    width: 50%;
+  }
+  .about-column .about-content:nth-child(2) .content:nth-child(1) .bar span{
+    width: 45%;
+  }
+  .about-column .about-content:nth-child(3) .content:nth-child(1) .bar span{
+    width: 30%;
+  }
+  
+  /*footer content*/
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -100;
+  width: 100%;
+}
+
+/* Optional: Add some styling to the text */
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
