@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+ --bg-image:url('bg.jpg') ;
+ --first-color: rgb(248, 132, 213);
+ --second-color: rgb(243, 98, 195);
+ --text-color:#0e0d0d;
+ --main-color:#fcfcfc;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-image);
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+    color: var(--text-color) ;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    max-width:  6%;
+    max-height: auto;
+    left: 20;
+    color: var(--main-color);
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.9rem; 
+    color: var(--main-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover 
+.navbar a.active{
+    color: var(--text-color);
+}
+
+#menu-icon{
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+}
+
+/*portfolio content*/
+.portfolio-content h1 {
+    color: black;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2.9em;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin-top: 0%;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: inline-block; 
+    padding: 25px 50px; 
+    font-weight: 600; 
+    font-size:large;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: all .3s ease-out 0.1s;
+  }
+
+  label:hover {
+    color: #f1a1d9; 
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input:checked + label {
+    background: transparent;
+    color: #f1edeb;
+    border-bottom: 1px solid;
+    text-align: center;
+  }
+
+  #tab-1:checked ~ .content #content-1,
+  #tab-2:checked ~ .content #content-2,
+  #tab-3:checked ~ .content #content-3 {
+    display: block;
+    animation-name: inUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: .6s;
+    text-align: center;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  } 
+  
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .column div.desc {
+    padding: 10px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--main-color);
+  }
+  .content {
+    background: transparent; 
+    color: #373737;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  .content > div {
+    display: none;
+    padding: 20px 25px 5px;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*footer content*/
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -100;
+  width: 100%;
+}
+
+/* Optional: Add some styling to the text */
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
